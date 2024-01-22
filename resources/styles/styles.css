@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Upheavel";
+  src: url('../upheavtt.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Upheavel';
+    color: #372b2d;
+    font-size: 1.03em;
+  }
+  
+  body { 
+    font-family: sans-serif; 
+    background: url(../images/backgrounds/backgound.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 97vh;
+  }
+
+  .flickity-prev-next-button {
+    visibility: hidden;
+  }
+  
+  .gallery-cell {
+    width: 72%;
+    height: 66vh;
+    margin-top: 180px;
+    margin-left: 70px;
+    counter-increment: gallery-cell;
+    visibility: hidden;
+  }
+
+  .gallery-cell.is-selected {
+    visibility: visible;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 12px;
+    height: 100%;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  li {
+    width: 33%;
+    height: 100%;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  li:hover{
+    transform: scale(1.03);
+  }
+
+  .top {
+    height: 40%;
+    margin-bottom: 35px;
+  }
+
+  .name-tag {
+    height: 40%;
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+  .image {
+    height: 60%;
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+  .content {
+    height: 55%;
+    text-align: center;
+    background: url(../images/content-note.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .game {
+    width: 60%;
+    height: 90%;
+    border: 3px solid red;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+
+  .game > * {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 5px;
+    text-decoration: underline;
+  }
+
+  .needs-subtext {
+    margin-bottom: 0px;
+    margin-top: 4px;
+  }
+
+  .subtext {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  footer{
+    position: absolute;
+    bottom: 0;
+    color: rgba(83, 83, 83, 0.2);
+    transition: .2s;
+  }
+
+  footer:hover{
+    color: rgba(0, 0, 0, 1);
+  }

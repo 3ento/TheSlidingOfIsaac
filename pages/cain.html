@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/styles/detail_page.css">
+    <link rel="icon" href="../resources/images/characters/Transition_Cain_webp.png">
+    <title>Cain</title>
+</head>
+
+<body>
+    <audio src="../resources/sfx/lazy.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy1.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy2.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy3.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy4.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy5.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy6.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy7.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy8.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy9.wav" type="audio/wav"></audio>
+
+    <div class="site-cain" id="cain">
+        <img class="home-btn" src="../resources/images/items/Trinket_Lazy_Worm_icon_webp.png" alt=""
+            onclick="playAudio()">
+        <ul class="cards">
+            <li class="card">
+                <div class="content">
+                    <h1>Game</h1>
+                    <p>Cain is a character unlocked by obtaining 55 or more coins at once in a run.</p>
+                    <p>Cain starts with two Red Heart containers
+                        <img alt="Full red heart" src="../resources/images/misc_items/HUD_heart_red_full_webp.png"
+                            width="14" height="13">
+                        <img alt="Full red heart" src="../resources/images/misc_items/HUD_heart_red_full_webp.png"
+                            width="14" height="13">, one Key <img src="../resources/images/misc_items/Key_webp.png">,
+                        and
+                        Lucky Foot <img src="../resources/images/items/Lucky_Foot_Icon_webp.png"
+                            style="width: 4%; height: 3%;">. He also gets the paperclip <img
+                            src="../resources/images/items/paperclip.png" width="4%" height="4%"> trinket after donating
+                        68 coins.
+                    </p>
+                    <p>Lucky Foot <img src="../resources/images/items/Lucky_Foot_Icon_webp.png"
+                            style="width: 4%; height: 3%;"> changes bad pills into good pills (similar to PHD, although
+                        not telling the pill's
+                        effect).</p>
+                    <p> <mark style="font-size: 20px; text-decoration: underline;">Strategy:</mark>
+                        Cain's kit makes him the best character for hoarding items. His starting luck increases the
+                        chance of a drop after a room clear, and Lucky Foot boosts this even further by increasing his
+                        success for room drops and machines like Slot Machines, Fortune Telling Machines, Shell Games,
+                        etc.</p>
+                    <p>As Cain is likely to have a large collection of coins or keys after a few floors, it is wise to
+                        open up Shops, bomb Shopkeepers, donate ten coins to a Donation Machine, or donate to a Beggar
+                        till he pays out to maximize the chances of an Angel Room. Cain benefits more from them compared
+                        to Devil Rooms due to his low health.</p>
+                    <p>Because Lucky Foot
+                        changes bad pills into good pills, pills are extremely effective for Cain. This makes Golden
+                        Pills and (in Repentance)Echo Chamber great finds for Cain, as he will receive multiple
+                        guaranteed buffs from the pills.</p>
+                </div>
+            </li>
+            <li class="card">
+                <div class="content">
+                    <h1>Lore</h1>
+                    <p>Cain is a figure mentioned in the Bible, particularly in the <mark>book of Genesis</mark>. He is
+                        known as the
+                        firstborn son of Adam and Eve, the first human couple created by God. The story of Cain and
+                        Abel,
+                        his younger brother, is one of the well-known narratives in the Bible.</p>
+
+                    <p>According to the biblical account, Cain and Abel both offered sacrifices to God. God favored
+                        Abel's
+                        offering, which was a lamb, but rejected Cain's offering of fruits and vegetables. Out of
+                        jealousy
+                        and anger, Cain lured Abel into a field and killed him. When God questioned Cain about Abel's
+                        whereabouts, Cain famously responded, "Am I my brother's keeper?"</p>
+
+                    <p>As a consequence of his crime, God cursed Cain, making the land unproductive for him and forcing
+                        him
+                        to be a wanderer. However, God also placed a mark on Cain to protect him from being killed by
+                        others. The story of Cain and Abel is often interpreted as a cautionary tale about jealousy,
+                        disobedience, and the consequences of sin.</p>
+                    <p> <mark style="font-size: 20px; text-decoration: underline;">Connection with game lore</mark>:
+                        Isaac often sees himself as a sinner, as seen in many endings, particularly in ending 17. So
+                        naturally many of the playable characters are sinners. Abel can actually be encountered ingame
+                        as an item <img src="../resources/images/items/Collectible_Abel_icon_webp.png" width="5%">, a
+                        familiar that mirros Isaacs movement and shoots 3.5dmg tears. When playing as Cain, the damage
+                        is upped to 7.5 and the tears turn red.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        let sfx = document.getElementsByTagName("audio");
+
+        function playAudio() {
+            x = sfx.item([Math.random() * 10]);
+            x.play();
+
+            setTimeout(function () { window.location = '../../index.html' }, 1000)
+        }
+    </script>
+</body>
+
+</html>
