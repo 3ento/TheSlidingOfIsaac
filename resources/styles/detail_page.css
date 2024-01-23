@@ -32,6 +32,27 @@
     background-size: contain;
 }
 
+.site-judas {
+    height: 100%;
+    background: url(../images/backgrounds/judas_room.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.site-azazel {
+    height: 100%;
+    background: url(../images/backgrounds/azazel_room.jpg);
+    background-position: center;
+    background-size: contain; 
+}
+
+.site-jae {
+    height: 100%;
+    background: url(../images/backgrounds/jae_room.jpg);
+    background-position: center;
+    background-size: contain; 
+}
+
 .home-btn {
     position: absolute;
     margin-top: 24px;
@@ -78,6 +99,7 @@ img.background {
     margin-right: 10px;
     overflow: scroll;
     scrollbar-width: none;
+    text-overflow:clip;
 }
 
 .content h1{
@@ -92,3 +114,27 @@ img.background {
 mark {
     background-color: rgba(173, 162, 166, 1);
 }  
+
+.lore-img {
+    width: 80%; 
+    border-radius: 8px; 
+    filter: drop-shadow(0 0 0.75rem black);
+    margin-bottom: 12px;
+}
+
+.lore-img:hover {
+    scale: 1.2;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+button:hover span {
+    display: none;
+}
+
+button:hover::before {
+    content: "Jk. Give up. Cry.";
+}

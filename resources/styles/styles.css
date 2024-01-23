@@ -10,7 +10,7 @@
     box-sizing: border-box;
     font-family: 'Upheavel';
     color: #372b2d;
-    font-size: 1.03em;
+    font-size: 0.99em;
   }
   
   body { 
@@ -19,24 +19,32 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 97vh;
+    height: 96vh;
   }
 
   .flickity-prev-next-button {
     visibility: hidden;
   }
+
+  .gallery {
+    height: 100%;
+    align-items: center;
+    padding-top: 20vh;
+  }
   
   .gallery-cell {
     width: 72%;
-    height: 66vh;
-    margin-top: 180px;
-    margin-left: 70px;
+    height: 70vh;
     counter-increment: gallery-cell;
     visibility: hidden;
   }
 
   .gallery-cell.is-selected {
     visibility: visible;
+  }
+
+  .char-port {
+    width: 13vw;
   }
 
   ul {
@@ -51,10 +59,8 @@
 
   li {
     width: 33%;
-    height: 100%;
-    transition: 0.2s;
-    display: flex;
-    flex-direction: column;
+    height: 99%;
+    transition: 0.2s; 
     text-align: left;
   }
 
@@ -65,12 +71,16 @@
   .top {
     height: 40%;
     margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .name-tag {
-    height: 40%;
     text-align: center;
     vertical-align: bottom;
+    width: 13vw;
   }
 
   .image {
@@ -86,16 +96,15 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border: 3px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
   .game {
-    width: 60%;
+    width: 55%;
     height: 90%;
-    border: 3px solid red;
     overflow: scroll;
     scrollbar-width: none;
   }
@@ -131,4 +140,9 @@
 
   footer:hover{
     color: rgba(0, 0, 0, 1);
+  }
+
+  .item-ico {
+    width: 1.5vw;
+    height: 3vh;
   }

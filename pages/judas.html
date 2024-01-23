@@ -4,16 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="judas.css">
+    <link rel="stylesheet" href="../resources/styles/detail_page.css">
+    <link rel="icon" href="../resources/images/characters/Transition_Judas_webp.png">
     <title>Judas</title>
 </head>
 
 <body>
-    <div class="site">
-        <div class="card">
-            <p>text</p>
-        </div>
+    <audio src="../resources/sfx/lazy.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy1.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy2.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy3.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy4.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy5.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy6.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy7.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy8.wav" type="audio/wav"></audio>
+    <audio src="../resources/sfx/lazy9.wav" type="audio/wav"></audio>
+
+    <div class="site-judas">
+        <img class="home-btn" src="../resources/images/items/Trinket_Lazy_Worm_icon_webp.png" alt=""
+            onclick="playAudio()">
+        <ul class="cards">
+            <li class="card">
+                <div class="content">
+                    <h1>Game</h1>
+                    <p>
+                        Judas is a character unlocked after beating Satan (Sheol)<img src="../resources/images/misc_items/Boss_Satan_ingame_webp(1).png" alt="Satan" width="40vw" height="20vh"> for the first time. Judas starts with one red
+                        heart container<img alt="Full red heart" src="../resources/images/misc_items/HUD_heart_red_full_webp.png"
+                        width="14" height="13">, and has The Book of Belial<img src="../resources/images/items/The_Book_Of_Belial_webp.png"
+                        style="width: 1vw; height: 2.5vh;"> upon starting, as well as 3 coins. Judas also has a
+                        1.35x <mark>damage multiplier</mark>.
+                    </p>
+                    <p>A damage multiplier is a hidden stat that calculates how much damage Isaac starts with. Given the
+                        way damage is calculated <span style="font-size: 12px;">(see below)</span>, Judas' damage
+                        multiplier of 1.35 gives him around 75% more
+                        damage from dmg ups <span style="font-size: 12px;">(ex. Pentagram- Isaac would get +1.69, while
+                            Judas gets +2.27)</span></p>
+                    <img src="https://services.fandom.com/mathoid-facade/v1/media/math/render/svg/99acb660535ab9c2fef27badd0cf4e5773c51221"
+                        class="mwe-math-fallback-image-display" aria-hidden="true"
+                        style="width:45.135ex; height:3.509ex; filter: invert(100%);"
+                        alt="{\displaystyle \color {black}{\mathit {EffectiveDamage}}={\mathit {CharBaseDmg}}\times {\sqrt {{\mathit {TotalDmgUps}}\times 1.2+1}}+{\mathit {FlatDmgUps}}}">
+
+                    <p> <mark style="font-size: 20px; text-decoration: underline;">Strategy:</mark> With his naturally
+                        high DPS, Judas' only concern is the low HP. So you'll generally want to play safer until you
+                        amass some health. Blood of the Martyr<img src="../resources/images/items/Collectible_Blood_of_the_Martyr_icon_webp.png" alt=""> synergizes with his Book of Belial, so be on the lookout
+                        for it. Any items that activate on low health, such as Whore of Babylon<img src="../resources/images/items/Collectible_Whore_of_Babylon_icon_webp.png" alt="">, Glyph of Balance <img src="../resources/images/items/Collectible_Glyph_of_Balance_icon_webp.png" alt=""> and Dark
+                        Price's Crown<img src="../resources/images/items/Collectible_Dark_Prince's_Crown_icon_webp.png" width="20px" height="20px">. </p>
+                </div>
+            </li>
+            <li class="card">
+                <div class="content">
+                    <h1>Lore</h1>
+                    <p>In the Bible, Judas refers to Judas Iscariot, one of the twelve disciples of Jesus Christ. Judas
+                        is <mark>most famously known for betraying Jesus</mark>, leading to his arrest and crucifixion. The betrayal took place in the
+                        Garden of Gethsemane, where Judas identified Jesus to the authorities by giving him a kiss.</p>
+
+                    <p>According to the New Testament accounts in the Gospels (Matthew, Mark, Luke, and John), Judas
+                        agreed to betray Jesus
+                        for thirty pieces of silver. The exact motivations behind Judas' actions are not explicitly
+                        stated in the Bible, and
+                        various interpretations exist. Some suggest that he was motivated by greed, while others propose
+                        that he may have
+                        been disappointed with Jesus' teachings or had other personal reasons.</p>
+
+                    <p>Judas' betrayal is a significant event in Christian theology and has been the subject of artistic
+                        and literary works
+                        throughout history. The term "Judas" is sometimes used metaphorically to refer to someone who
+                        betrays another
+                        person, particularly a trusted friend or ally.</p>
+                    <img class="lore-img" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/04/03/17/Judas-2.jpg" alt="">
+                    <p> <mark style="font-size: 20px; text-decoration: underline;">Connection with game lore</mark>:
+                        Isaac finds himself
+                        sinful, so he imagines himself as famous sinners. The theme of betryal could be linked to Isaac
+                        feeling guilty over
+                        his parent's divorce, blaming himself, as if he "betrayed" them and the family as a whole.
+                    </p>
+                </div>
+            </li>
+        </ul>
     </div>
+    <script>
+        let sfx = document.getElementsByTagName("audio");
+
+        function playAudio() {
+            x = sfx.item([Math.random() * 10]);
+            x.play();
+
+            setTimeout(function () { window.location = '../../index.html' }, 1500)
+        }
+    </script>
 </body>
 
 </html>
