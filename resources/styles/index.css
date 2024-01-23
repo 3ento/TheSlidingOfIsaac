@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Upheavel";
+  src: url('../upheavtt.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Upheavel';
+    color: #372b2d;
+    font-size: 0.99em;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Adjust as needed */
+  height: 100vh; /* Adjust as needed */
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+
+#carousel-item {
+  width: 100%;
+  height: 100vh; /* Make each item take the full height of the container */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+body { 
+  font-family: sans-serif;
+  height: 96vh;
+}
+
+.menu {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/backgrounds/menu2/menu2.gif);
+  background-size: contain;
+  background-position: center;
+}
+
+.flickity-prev-next-button {
+  visibility: hidden;
+}
+
+.gallery {
+  height: 100%;
+  align-items: center;
+  padding-top: 20vh;
+  background: url(../images/backgrounds/backgound.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery-cell {
+  width: 72%;
+  height: 70vh;
+  counter-increment: gallery-cell;
+  visibility: hidden;
+}
+
+.gallery-cell.is-selected {
+  visibility: visible;
+}
+
+.char-port {
+  width: 13vw;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 12px;
+  height: 100%;
+  gap: 12px;
+  justify-content: center;
+}
+
+li {
+  width: 33%;
+  height: 99%;
+  transition: 0.2s; 
+  text-align: left;
+}
+
+li:hover{
+  transform: scale(1.03);
+}
+
+.top {
+  height: 40%;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-tag {
+  text-align: center;
+  vertical-align: bottom;
+  width: 13vw;
+}
+
+.image {
+  height: 60%;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.content {
+  height: 55%;
+  text-align: center;
+  background: url(../images/content-note.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.game {
+  width: 55%;
+  height: 90%;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.game > * {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 5px;
+  text-decoration: underline;
+}
+
+.needs-subtext {
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+
+.subtext {
+  font-size: 12px;
+  margin: 0;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  color: rgba(83, 83, 83, 0);
+  transition: .2s;
+}
+
+footer:hover{
+  color: rgba(0, 0, 0, 1);
+}
+
+.item-ico {
+  width: 1.5vw;
+  height: 3vh;
+}

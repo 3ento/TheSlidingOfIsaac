@@ -2532,11 +2532,13 @@
       var leftMethod = this.options.rightToLeft ? 'next' : 'previous';
       this.uiChange();
       this[leftMethod]();
+      document.getElementById("select-left").play()
     } else if (event.keyCode == 39) {
       // go right
       var rightMethod = this.options.rightToLeft ? 'previous' : 'next';
       this.uiChange();
       this[rightMethod]();
+      document.getElementById("select-right").play()
     }
   };
 

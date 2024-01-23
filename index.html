@@ -4,281 +4,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/styles/styles.css">
+
+    <link rel="stylesheet" href="resources/styles/index.css">
     <link rel="stylesheet" href="resources/styles/flickity.css">
     <link rel="icon" href="resources/images/characters/Untitled.png">
+
+    <audio id="menu-music" src="resources/sfx/rep_menu_theme.mp3" autoplay></audio>
+    <audio id="menu-sfx" src="resources/sfx/menu_flip/menu_flip.m4a"></audio>
+    <audio id="select-left" src="resources/sfx/character_select_left.mp3"></audio>
+    <audio id="select-right" src="resources/sfx/character_select_right.mp3"></audio>
+
     <title>The Binding of Isaac: Encyclopedia</title>
 </head>
 
 <body>
-    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-        <div class="gallery-cell">
-            <ul>
-                <li onclick="window.location='pages/isaac.html'">
-                    <div class="top">
-                        <div class="name-tag">
-                            <img class="name-tag" src="resources/images/name_tags/Layer1.png" alt="">
-                        </div>
-                        <div class="image">
-                            <img class="char-port" src="resources/images/characters/Transition_Isaac_webp.png" alt="">
-                        </div>
+    
+
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+
+            <div class="menu" id="carousel-item"></div>
+            <div class="gallery js-flickity" id="carousel-item">
+                    <div class="gallery-cell">
+                        <ul>
+                            <li onclick="window.location='pages/isaac.html'">
+                                <div class="top">
+                                    <div class="name-tag">
+                                        <img class="name-tag" src="resources/images/name_tags/Layer1.png" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img class="char-port" src="resources/images/characters/Transition_Isaac_webp.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="game">
+                                        <h1>Game</h1>
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png">
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png">
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png">
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/Bomb_webp.png" width="28"
+                                            height="28">
+
+                                        <p>Items: The D6<img src="resources/images/items/Objeto_El_D6_webp.png"
+                                                style="width: 1.5vw; height: 3vh;">
+                                        </p>
+
+                                        <p style="margin-top: 10px;">Notable unlocks:</p>
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Mom's_Knife_icon_webp.png" width="28"
+                                            height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Missing_Poster_icon_webp.png"
+                                            width="28" height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_The_D20_icon_webp.png" width="28"
+                                            height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_D_Infinity_icon_webp.png" width="28"
+                                            height="28">
+                                        <h1 style="margin-top: 10px;">Lore</h1>
+                                        <p>"The Binding"<br>Genesis 22 of the Hebrew Bible</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li onclick="window.location='pages/maggy.html'">
+                                <div class="top">
+                                    <div class="name-tag">
+                                        <img class="name-tag" src="resources/images/name_tags/maggy.png" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img class="char-port" src="resources/images/characters/Transition_Magdalene_webp.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="game">
+                                        <h1>Game</h1>
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
+                                            width="28" height="26">
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
+                                            width="28" height="26">
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
+                                            width="28" height="26">
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
+                                            width="28" height="26">
+                                        <img class="item-ico" alt="Pills" src="resources/images/misc_items/BlueBlue_webp.png" width="28" height="28">
+
+                                        <p>Items: Yum Heart<img src="resources/images/items/Yum_Heart_Icon_webp.png"
+                                                style="width: 1.2vw; height: 2vh">
+                                        </p>
+
+                                        <p style="margin-top: 10px;">Notable unlocks:</p>
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Candy_Heart_icon_webp.png" width="28"
+                                            height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Eucharist_icon_webp.png" width="28"
+                                            height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Glyph_of_Balance_icon_webp.png"
+                                            width="28" height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Censer_icon_webp.png" width="28"
+                                            height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Maggy's_Bow_icon_webp.png" width="28"
+                                            height="28">
+                                        <h1 style="margin-top: 10px;">Lore</h1>
+                                        <p>Mary Magdalene, one of Jesus' followers</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li onclick="window.location='pages/cain.html'">
+                                <div class="top">
+                                    <div class="name-tag">
+                                        <img class="name-tag" src="resources/images/name_tags/cain.png" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img class="char-port" src="resources/images/characters/Transition_Cain_webp.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="game">
+                                        <h1>Game</h1>
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
+                                            width="28" height="26">
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
+                                            width="28" height="26">
+                                        <img src="resources/images/misc_items/Key_webp.png" width="15vw" height="20vh">
+
+                                        <p>Items: Lucky foot<img src="resources/images/items/Lucky_Foot_Icon_webp.png"
+                                                style="width: 1vw; height: 2.5vh;">,
+                                            Paper Clip<img src="resources/images/items/paperclip.png"
+                                                style="width: 1.2vw; height: 2.5vh;">
+                                        </p>
+
+                                        <p style="margin-top: 10px;">Notable unlocks:</p>
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Cain's_Other_Eye_icon_webp.png"
+                                            width="28" height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Guppy's_Eye_icon_webp.png" width="28"
+                                            height="28">
+                                        <h1 style="margin-top: 10px;">Lore</h1>
+                                        <p>Cain, Book of Genesis, Son of Adam and Eve</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="content">
-                        <div class="game">
-                            <h1>Game</h1>
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png">
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png">
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png">
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/Bomb_webp.png" width="28"
-                                height="28">
+                    <div class="gallery-cell">
+                        <ul>
+                            <li onclick="window.location='pages/judas.html'">
+                                <div class="top">
+                                    <div class="name-tag">
+                                        <img class="name-tag" src="resources/images/name_tags/judas.png" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img class="char-port" src="resources/images/characters/Transition_Judas_webp.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="game">
+                                        <h1>Game</h1>
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
+                                            width="28" height="26">
 
-                            <p>Items: The D6<img src="resources/images/items/Objeto_El_D6_webp.png"
-                                    style="width: 1.5vw; height: 3vh;">
-                            </p>
+                                        <p>Items: The Book of Belial<img src="resources/images/items/The_Book_Of_Belial_webp.png"
+                                                style="width: 1.2vw; height: 3vh;">
+                                        </p>
 
-                            <p style="margin-top: 10px;">Notable unlocks:</p>
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Mom's_Knife_icon_webp.png" width="28"
-                                height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Missing_Poster_icon_webp.png"
-                                width="28" height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_The_D20_icon_webp.png" width="28"
-                                height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_D_Infinity_icon_webp.png" width="28"
-                                height="28">
-                            <h1 style="margin-top: 10px;">Lore</h1>
-                            <p>"The Binding"<br>Genesis 22 of the Hebrew Bible</p>
-                        </div>
+                                        <p style="margin-top: 10px;">Notable unlocks:</p>
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Curved_Horn_icon_webp.png" width="28"
+                                            height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Judas'_Tongue_icon_webp.png"
+                                            width="28" height="28">
+                                        <h1 style="margin-top: 10px;">Lore</h1>
+                                        <p>Judas Iscariot, the one who betrayed Jesus</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li onclick="window.location='pages/azazel.html'">
+                                <div class="top">
+                                    <div class="name-tag">
+                                        <img class="name-tag" src="resources/images/name_tags/azazel.png" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img class="char-port" src="resources/images/characters/Transition_Azazel_webp.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="game">
+                                        <h1>Game</h1>
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_black_full_webp.png"
+                                            width="28" height="26">
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items//HUD_heart_black_full_webp.png"
+                                            width="28" height="26">
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items//HUD_heart_black_full_webp.png"
+                                            width="28" height="26">
+
+                                        <p>Items: None
+                                        <p style="font-size: 15px;">(shoots a short brimstone<img alt="Full red heart"
+                                                src="resources/images/items/Brimstone_Icon_webp.png" width="14" height="13"> instead
+                                            of tears)</p>
+                                        </p>
+
+                                        <p style="margin-top: 10px;">Notable unlocks:</p>
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Lilith_icon_webp.png" width="28"
+                                            height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Maw_of_the_Void_icon_webp.png"
+                                            width="28" height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Satanic_Bible_icon_webp.png"
+                                            width="28" height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Devil's_Crown_icon_webp.png"
+                                            width="28" height="28">
+                                        <h1 style="margin-top: 10px;">Lore</h1>
+                                        <p>The one who takes the blame, fallen angel, Hebrew bible</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li onclick="window.location='pages/jae.html'">
+                                <div class="top">
+                                    <div class="name-tag">
+                                        <img class="name-tag" src="resources/images/name_tags/jae1.png" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img class="char-port" src="resources/images/characters/Transition_JacobEsau_webp.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="game">
+                                        <h1>Game</h1>
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
+                                            width="28" height="26">
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
+                                            width="28" height="26">
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
+                                            width="28" height="26">
+                                        /
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
+                                            width="28" height="26">
+                                        <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_soul_full_webp.png"
+                                            width="28" height="26">
+
+                                        <p>Items: None</p>
+
+                                        <p style="margin-top: 10px;">Notable unlocks:</p>
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Rock_Bottom_icon_webp.png" width="28"
+                                            height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_The_Stairway_icon_webp.png" width="28"
+                                            height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Damocles_icon_webp.png" width="28"
+                                            height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Birthright_icon_webp.png" width="28"
+                                            height="28">
+                                        <br>
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Inner_Child_icon_webp.png" width="28"
+                                            height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Genesis_icon_webp.png" width="28"
+                                            height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Vanishing_Twin_icon_webp.png"
+                                            width="28" height="28">
+                                        <img class="item-ico" alt="Full red heart"
+                                            src="resources/images/notable_unlocks/Achievement_Magic_Skin_icon_webp.png" width="28"
+                                            height="28">
+                                        <h1 style="margin-top: 10px;">Lore</h1>
+                                        <p>Sons of Isaac</p>
+                                    </div>
+                            </li>
+                        </ul>
                     </div>
-                </li>
-                <li onclick="window.location='pages/maggy.html'">
-                    <div class="top">
-                        <div class="name-tag">
-                            <img class="name-tag" src="resources/images/name_tags/maggy.png" alt="">
-                        </div>
-                        <div class="image">
-                            <img class="char-port" src="resources/images/characters/Transition_Magdalene_webp.png" alt="">
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="game">
-                            <h1>Game</h1>
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
-                                width="28" height="26">
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
-                                width="28" height="26">
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
-                                width="28" height="26">
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
-                                width="28" height="26">
-                            <img class="item-ico" alt="Pills" src="resources/images/misc_items/BlueBlue_webp.png" width="28" height="28">
+            </div> 
 
-                            <p>Items: Yum Heart<img src="resources/images/items/Yum_Heart_Icon_webp.png"
-                                    style="width: 1.2vw; height: 2vh">
-                            </p>
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
 
-                            <p style="margin-top: 10px;">Notable unlocks:</p>
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Candy_Heart_icon_webp.png" width="28"
-                                height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Eucharist_icon_webp.png" width="28"
-                                height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Glyph_of_Balance_icon_webp.png"
-                                width="28" height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Censer_icon_webp.png" width="28"
-                                height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Maggy's_Bow_icon_webp.png" width="28"
-                                height="28">
-                            <h1 style="margin-top: 10px;">Lore</h1>
-                            <p>Mary Magdalene, one of Jesus' followers</p>
-                        </div>
-                    </div>
-                </li>
-                <li onclick="window.location='pages/cain.html'">
-                    <div class="top">
-                        <div class="name-tag">
-                            <img class="name-tag" src="resources/images/name_tags/cain.png" alt="">
-                        </div>
-                        <div class="image">
-                            <img class="char-port" src="resources/images/characters/Transition_Cain_webp.png" alt="">
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="game">
-                            <h1>Game</h1>
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
-                                width="28" height="26">
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
-                                width="28" height="26">
-                            <img src="resources/images/misc_items/Key_webp.png" width="15vw" height="20vh">
-
-                            <p>Items: Lucky foot<img src="resources/images/items/Lucky_Foot_Icon_webp.png"
-                                    style="width: 1vw; height: 2.5vh;">,
-                                Paper Clip<img src="resources/images/items/paperclip.png"
-                                    style="width: 1.2vw; height: 2.5vh;">
-                            </p>
-
-                            <p style="margin-top: 10px;">Notable unlocks:</p>
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Cain's_Other_Eye_icon_webp.png"
-                                width="28" height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Guppy's_Eye_icon_webp.png" width="28"
-                                height="28">
-                            <h1 style="margin-top: 10px;">Lore</h1>
-                            <p>Cain, Book of Genesis, Son of Adam and Eve</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="gallery-cell">
-            <ul>
-                <li onclick="window.location='pages/judas.html'">
-                    <div class="top">
-                        <div class="name-tag">
-                            <img class="name-tag" src="resources/images/name_tags/judas.png" alt="">
-                        </div>
-                        <div class="image">
-                            <img class="char-port" src="resources/images/characters/Transition_Judas_webp.png" alt="">
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="game">
-                            <h1>Game</h1>
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
-                                width="28" height="26">
-
-                            <p>Items: The Book of Belial<img src="resources/images/items/The_Book_Of_Belial_webp.png"
-                                    style="width: 1.2vw; height: 3vh;">
-                            </p>
-
-                            <p style="margin-top: 10px;">Notable unlocks:</p>
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Curved_Horn_icon_webp.png" width="28"
-                                height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Judas'_Tongue_icon_webp.png"
-                                width="28" height="28">
-                            <h1 style="margin-top: 10px;">Lore</h1>
-                            <p>Judas Iscariot, the one who betrayed Jesus</p>
-                        </div>
-                    </div>
-                </li>
-                <li onclick="window.location='pages/azazel.html'">
-                    <div class="top">
-                        <div class="name-tag">
-                            <img class="name-tag" src="resources/images/name_tags/azazel.png" alt="">
-                        </div>
-                        <div class="image">
-                            <img class="char-port" src="resources/images/characters/Transition_Azazel_webp.png" alt="">
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="game">
-                            <h1>Game</h1>
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_black_full_webp.png"
-                                width="28" height="26">
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items//HUD_heart_black_full_webp.png"
-                                width="28" height="26">
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items//HUD_heart_black_full_webp.png"
-                                width="28" height="26">
-
-                            <p>Items: None
-                            <p style="font-size: 15px;">(shoots a short brimstone<img alt="Full red heart"
-                                    src="resources/images/items/Brimstone_Icon_webp.png" width="14" height="13"> instead
-                                of tears)</p>
-                            </p>
-
-                            <p style="margin-top: 10px;">Notable unlocks:</p>
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Lilith_icon_webp.png" width="28"
-                                height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Maw_of_the_Void_icon_webp.png"
-                                width="28" height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Satanic_Bible_icon_webp.png"
-                                width="28" height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Devil's_Crown_icon_webp.png"
-                                width="28" height="28">
-                            <h1 style="margin-top: 10px;">Lore</h1>
-                            <p>The one who takes the blame, fallen angel, Hebrew bible</p>
-                        </div>
-                    </div>
-                </li>
-                <li onclick="window.location='pages/jae.html'">
-                    <div class="top">
-                        <div class="name-tag">
-                            <img class="name-tag" src="resources/images/name_tags/jae1.png" alt="">
-                        </div>
-                        <div class="image">
-                            <img class="char-port" src="resources/images/characters/Transition_JacobEsau_webp.png" alt="">
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="game">
-                            <h1>Game</h1>
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
-                                width="28" height="26">
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
-                                width="28" height="26">
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
-                                width="28" height="26">
-                            /
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_red_full_webp.png"
-                                width="28" height="26">
-                            <img class="item-ico" alt="Full red heart" src="resources/images/misc_items/HUD_heart_soul_full_webp.png"
-                                width="28" height="26">
-
-                            <p>Items: None</p>
-
-                            <p style="margin-top: 10px;">Notable unlocks:</p>
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Rock_Bottom_icon_webp.png" width="28"
-                                height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_The_Stairway_icon_webp.png" width="28"
-                                height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Damocles_icon_webp.png" width="28"
-                                height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Birthright_icon_webp.png" width="28"
-                                height="28">
-                            <br>
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Inner_Child_icon_webp.png" width="28"
-                                height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Genesis_icon_webp.png" width="28"
-                                height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Vanishing_Twin_icon_webp.png"
-                                width="28" height="28">
-                            <img class="item-ico" alt="Full red heart"
-                                src="resources/images/notable_unlocks/Achievement_Magic_Skin_icon_webp.png" width="28"
-                                height="28">
-                            <h1 style="margin-top: 10px;">Lore</h1>
-                            <p>Sons of Isaac</p>
-                        </div>
-                </li>
-            </ul>
         </div>
     </div>
+    
     <footer>
         © Boris-Mihail #7 12v
     </footer>
 
     <script src="resources/scripts/script.js"></script>
+    <script src="resources/scripts/vertical_slide.js"></script>
+    <script>document.getElementById('menu-music').volume=0.3</script>
 </body>
 
 </html>

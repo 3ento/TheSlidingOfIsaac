@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="../resources/styles/detail_page.css">
     <link rel="icon" href="../resources/images/characters/Transition_JacobEsau_webp.png">
-    <title>Jacob&Esau</title>
-</head>
 
-<body>
     <audio src="../resources/sfx/lazy.wav" type="audio/wav"></audio>
     <audio src="../resources/sfx/lazy1.wav" type="audio/wav"></audio>
     <audio src="../resources/sfx/lazy2.wav" type="audio/wav"></audio>
@@ -21,6 +19,12 @@
     <audio src="../resources/sfx/lazy8.wav" type="audio/wav"></audio>
     <audio src="../resources/sfx/lazy9.wav" type="audio/wav"></audio>
 
+
+    <title>Jacob&Esau</title>
+</head>
+
+<body>
+    
     <div class="site-jae">
         <img class="home-btn" src="../resources/images/items/Trinket_Lazy_Worm_icon_webp.png" alt=""
             onclick="playAudio()">
@@ -119,16 +123,7 @@
             </li>
         </ul>
     </div>
-    <script>
-        let sfx = document.getElementsByTagName("audio");
-
-        function playAudio() {
-            x = sfx.item([Math.random() * 10]);
-            x.play();
-
-            setTimeout(function () { window.location = '../../index.html' }, 1500)
-        }
-    </script>
+    <script src="../resources/scripts/mattman_scream.js"></script>
 </body>
 
 </html>
