@@ -10,7 +10,7 @@
     box-sizing: border-box;
     font-family: 'Upheavel';
     color: #372b2d;
-    font-size: 0.99em;
+    font-size: 1.013em;
 }
 
 .carousel-container {
@@ -187,6 +187,8 @@ footer:hover{
 }
 
 .item-ico {
-  width: 1.5vw;
-  height: 3vh;
+  object-fit: contain;
+  min-width: 24px;
+  max-width: 30px;
+  max-height: 25px;
 }
