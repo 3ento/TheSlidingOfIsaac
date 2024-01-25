@@ -4,5 +4,5 @@ function playAudio() {
     x = sfx.item([Math.random() * 10]);
     x.play();
 
-    setTimeout(function () { window.location = '../../index.html' }, 1000)
+    setTimeout(function () { window.location = '../index.html' }, 1000)
 }

@@ -148,7 +148,7 @@ li:hover{
 
 .game {
   width: 55%;
-  height: 90%;
+  height: 80%;
   overflow: scroll;
   scrollbar-width: none;
 }
