@@ -27,6 +27,9 @@
 <body>
     
     <div class="site-maggy">
+        <div id="bomb">
+            <img src="../resources/images/misc_items/Bomb_webp.png" alt="">
+        </div>
         <img class="home-btn" src="../resources/images/items/Trinket_Lazy_Worm_icon_webp.png" alt=""
             onclick="playAudio()">
         <img class="background" src="../resources/images/backgrounds/maggy_room.jpg" alt="">
@@ -125,8 +128,26 @@
                 </div>
             </li>
         </ul>
+        <div class="secret-room" id="secret-room">
+            <img onclick="window.location='../pages/secret-room.html'" src="../resources/images/misc_items/Secret_Room_Door_webp.png" alt="">
+        </div>
     </div>
+    
     <script src="../resources/scripts/mattman_scream.js"></script>
+    <script>
+        document.addEventListener('keydown', (event) => {
+            console.log(event.key);
+
+            if (event.key === 'e') {
+                document.getElementById('bomb').classList.add('animate');
+                setTimeout(()=> {
+                    document.getElementById('bomb').style.visibility="hidden";
+                    document.getElementById('secret-room').style.visibility="visible"
+                }, 2000);
+            }
+        });
+
+    </script>
 </body>
 
 </html>

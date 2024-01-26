@@ -53,6 +53,13 @@
     background-size: contain; 
 }
 
+.site-secret {
+    height: 100vh;
+    background: url(../images/backgrounds/r_keyjpg.jpg);
+    background-position: center;
+    background-size: contain; 
+}
+
 .home-btn {
     position: absolute;
     margin-top: 24px;
@@ -137,4 +144,51 @@ button:hover span {
 
 button:hover::before {
     content: "Jk. Give up. Cry.";
+}
+
+.secret-room {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    visibility: hidden;
+}
+
+.secret-room img {
+    width: 5vw;
+}
+
+#bomb {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    /* bring your own prefixes */
+    
+}
+
+#bomb img {
+    scale: 2.5;
+}
+
+@keyframes move-bomb {
+    0% {top: 50%;}
+    99% {top: 80%;}
+    100% {top: 80%; content: url('https://i.gifer.com/origin/d7/d7ac4f38b77abe73165d85edf2cbdb9e_w200.gif');}
+}
+
+#bomb.animate {
+    visibility: visible;
+    animation: move-bomb 2s ease;
+}
+
+.click {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 5vw;
+    height: 10vh;
+    transform: translate(-50%, -50%);
 }
