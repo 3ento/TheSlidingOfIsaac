@@ -18,6 +18,7 @@
     <audio src="../resources/sfx/lazy7.wav" type="audio/wav"></audio>
     <audio src="../resources/sfx/lazy8.wav" type="audio/wav"></audio>
     <audio src="../resources/sfx/lazy9.wav" type="audio/wav"></audio>
+    <audio id="secret-room-break-sfx" src="../resources/sfx/secret-room-break-sfx.m4a" type="audio/m4a"></audio>
     <audio src="../resources/sfx/character_music/y2mate.com - Innocence Mangled Depths.mp3" type="audio/mp3" autoplay></audio>
 
     
@@ -28,7 +29,7 @@
     
     <div class="site-maggy">
         <div id="bomb">
-            <img src="../resources/images/misc_items/Bomb_webp.png" alt="">
+            <img id="bomb-img" src="../resources/images/misc_items/Bomb_webp.png" alt="">
         </div>
         <img class="home-btn" src="../resources/images/items/Trinket_Lazy_Worm_icon_webp.png" alt=""
             onclick="playAudio()">
@@ -141,8 +142,9 @@
             if (event.key === 'e') {
                 document.getElementById('bomb').classList.add('animate');
                 setTimeout(()=> {
-                    document.getElementById('bomb').style.visibility="hidden";
-                    document.getElementById('secret-room').style.visibility="visible"
+                    document.getElementById('bomb-img').src="../resources/images/misc_items/output-onlinegiftools.gif";
+                    document.getElementById('secret-room').style.visibility="visible";
+                    document.getElementById('secret-room-break-sfx').play();
                 }, 2000);
             }
         });
